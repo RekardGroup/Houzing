@@ -19,7 +19,7 @@ const Home = () => {
       <FarmHouse/>
       <Recommended title={'Recent Properties for Rent'}/>
       <Comments/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

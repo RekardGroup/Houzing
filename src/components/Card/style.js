@@ -7,10 +7,12 @@ import { ReactComponent as like } from '../../assets/icons/like.svg'
 import { ReactComponent as resize } from '../../assets/icons/resize.svg'
 
 const Container = styled.div`
-  width: 380px;
-  position: relative;
+  width: 380px;  //aslida 380
   height: 430px;
+  position: relative;
   background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #E6E9EC;
   border-radius: 3px;
   margin-right: ${({ mr }) => `${mr}px`};
@@ -118,7 +120,9 @@ Icon.Like = styled(like)`
   cursor: pointer;
 `;
 
-Icon.Resize = styled(resize)``;
+Icon.Resize = styled(resize)`
+  cursor: pointer;
+  `;
 export {
   Container,
   Img,
