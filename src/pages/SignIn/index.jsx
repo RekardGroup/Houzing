@@ -12,7 +12,7 @@
   const SignIn = () => {
     const navigate = useNavigate()
     const [err, setErr]= useState([])
-    // useQueries([],()=>{},{})
+    useQueries([],()=>{},{})
    const {mutate} =  useMutation(()=>{
     return fetch(`${url}public/auth/login`,{method:'POST',
     headers:{'Content-type':'application/json'},
