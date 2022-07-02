@@ -24,7 +24,7 @@ const Navbar = () => {
               })
             }
           </Nav>
-          <Button onClick={() => navigate('')}width='120px'>Login</Button> {/* /signin */}
+          <Button onClick={() => navigate('/signin')}width='120px'>Login</Button> {/* /signin */}
         </Wrapper>
       </Header>
       <Outlet />
