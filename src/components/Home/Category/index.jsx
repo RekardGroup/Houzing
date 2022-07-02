@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react'
 import CategoryCard from './CategoryCard'
 import { Carousel, Container, Icon, Wrapper,Title } from './style'
 import notAvailable from '../../../assets/imgs/not_available.png'
-import {ReactComponent as Home} from '../../../assets/icons/homeGroup.svg'
+import {ReactComponent as Home} from '../../../assets/imgs/apartment.png'
 import AliceCarousel from 'react-alice-carousel'
 import { useQuery } from 'react-query'
 
@@ -18,21 +18,22 @@ const Category = () => {
         items: 4
     }
   }
-  const items = [
-    <CategoryCard mr={20} title="house"/>,
-    <CategoryCard Icon={<Home/>} mr={20} title="Apartment"/>,
-    <CategoryCard  mr={20}/>,
-    <CategoryCard  mr={20}/>,
-    <CategoryCard  mr={20}/>,
-    <CategoryCard  mr={20}/>,
-    <CategoryCard  mr={20}/>,
-  ]
+  // const items = [
+  //   <CategoryCard mr={20} title="house"/>,
+  //   <CategoryCard Icon={<Home/>} mr={20} title="Apartment"/>,
+  //   <CategoryCard  mr={20}/>,
+  //   <CategoryCard  mr={20}/>,
+  //   <CategoryCard  mr={20}/>,
+  //   <CategoryCard  mr={20}/>,
+  //   <CategoryCard  mr={20}/>,
+  // ]
   useQuery([],()=>{
     return fetch(`${url}v1/categories`,{headers:{Authorization:`Bearer ${localStorage.getItem('token')}`}})
     .then(res=>res.json())
   },{
     onSuccess:(res)=>{
-      let response = res.data.map(value=><Title>{value}</Title>)
+      console.log(res);
+      let response = res.data.map((value, index)=><CategoryCard id={index+1} title={value}/>)
       setData(response)
     }
   })
