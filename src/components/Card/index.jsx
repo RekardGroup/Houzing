@@ -18,7 +18,7 @@ import notAvailable from "../../assets/imgs/not_available.png";
 import noUser from "../../assets/imgs/no_user.png";
 const Card = ({ info, mr }) => {
   return (
-    <Container mr={mr}>
+    <Container mr={ mr }>
       <Img src={info?.attachments[0]?.imgPath || notAvailable} />
       <Featured>Featured</Featured>
       <ForSale>For Sale</ForSale>

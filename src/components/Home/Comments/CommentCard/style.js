@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    max-width:380px;
+    max-width:360px;
     position: relative;
     height: 286px;
     min-width: 343px;
+    margin-left: -7px;
     background: #F5F7FC;
     .description{
         background-color: #ffffff;
