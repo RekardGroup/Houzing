@@ -15,8 +15,11 @@ const Category = () => {
         items: 1,
     },
     1024: {
-        items: 4
-    }
+        items: 3,
+    },
+    1660: {
+      items: 4
+  }
   }
   // const items = [
   //   <CategoryCard mr={20} title="house"/>,
