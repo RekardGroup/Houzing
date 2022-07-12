@@ -1,6 +1,10 @@
 import React from 'react'
 import { Container, Wrapper, Icon, FooterBottom } from './style'
 import {Button} from '../Generic'
+import ScrollToTop from "react-scroll-to-top";
+import {ReactComponent as Arrow} from '../../assets/icons/rightArrow.svg'
+
+
 
 const Footer = () => {
   return (
@@ -18,13 +22,13 @@ const Footer = () => {
                 <div className="contact-item">
                     <Icon.Call/>
                     <p className='description'>
-                        123 456 7890
+                        +998 99-705-34-31
                     </p>
                 </div>
                 <div className="contact-item">
                     <Icon.Email/>
                     <p className='description'>
-                    support@houzing.com
+                    spaceone168@gmail.com
                     </p>
                 </div>
                 <Icon.Wrapper>
@@ -69,7 +73,8 @@ const Footer = () => {
                 </Icon.Wrapper>
                 <Icon.Wrapper>
                     <p className='small-description mb-0'>Copyright © 2021 CreativeLayers. All Right Reserved.</p>
-                    <Button ml={73} width={'45px'} height={'45px'} type={'primary'}><Icon.Arrow/></Button>
+                    <ScrollToTop smooth component={<Arrow />} className='button-totap'/>
+                    {/* <Button ml={73} width={'45px'} height={'45px'} type={'primary'}><Icon.Arrow/></Button> */}
                 </Icon.Wrapper>
             </Wrapper>
         </FooterBottom>

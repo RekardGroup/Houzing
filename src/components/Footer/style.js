@@ -92,9 +92,9 @@ Icon.Linkedin = styled(linkedin)`
 Icon.FooterLogo = styled(navLogo)`
     margin-right: 12px;
 `;
-Icon.Arrow = styled(arrow)`
-    transform: rotate(270deg);
-`
+// Icon.Arrow = styled(arrow)`
+//     transform: rotate(270deg);
+// `
 const FooterBottom = styled.div`
     display: flex;
     justify-content: center;
@@ -105,5 +105,7 @@ const FooterBottom = styled.div`
         color: white;
     }
 `;
+
+
 
 export {Container,Wrapper, Icon,FooterBottom}

@@ -55,3 +55,14 @@ body {
 .text-center{
   text-align: center;
 }
+
+.button-totap{
+    margin-left: 73px;
+    width: 45px;
+    height: 46px;
+    background: #0061DF;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: rotate(270deg);
+}
