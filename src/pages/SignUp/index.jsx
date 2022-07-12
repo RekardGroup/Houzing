@@ -23,7 +23,7 @@ const SignUp = () => {
           Register
         </Button>
       </Wrapper>
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 };
