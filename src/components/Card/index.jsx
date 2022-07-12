@@ -14,15 +14,15 @@ import {
   IconWrapper,
   Featured,
 } from "./style";
-import notAvailable from "../../assets/imgs/not_available.png";
-import noUser from "../../assets/imgs/no_user.png";
+import homePrevyu from "../../assets/imgs/homeprevyu.png";
+import Logo1 from "../../assets/imgs/logo1.png";
 const Card = ({ info, mr }) => {
   return (
     <Container mr={ mr }>
-      <Img src={info?.attachments[0]?.imgPath || notAvailable} />
+      <Img src={info?.attachments[0]?.imgPath || homePrevyu} />
       <Featured>Featured</Featured>
       <ForSale>For Sale</ForSale>
-      <Owner src={info?.owner || noUser} />
+      <Owner src={info?.owner || Logo1} />
       <InfoWrapper>
         <div
           style={{ whiteSpace: "nowrap", overflow: "hidden" }}

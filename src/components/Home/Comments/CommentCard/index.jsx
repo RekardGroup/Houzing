@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, User, Wrapper } from './style'
-import user from '../../../../assets/imgs/no_user.png'
+import user from '../../../../assets/imgs/logo3.png'
 
 const CommentCard = ({Comment,userName, jobTitle}) => {
   return (
