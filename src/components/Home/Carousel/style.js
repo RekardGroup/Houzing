@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { Carousel } from "antd";
-import { ReactComponent as LeftArrow } from '../../../assets/icons/leftArrow.svg'
-import { ReactComponent as RightArrow } from '../../../assets/icons/rightArrow.svg'
-import { ReactComponent as SqFt } from "../../../assets/icons/ruler.svg";
-import { ReactComponent as Garage } from "../../../assets/icons/car.svg";
-import { ReactComponent as Baths } from "../../../assets/icons/bath.svg";
-import { ReactComponent as Beds } from "../../../assets/icons/bed.svg";
+import { ReactComponent as LeftArrow } from "../../../assets/icons/leftArrow.svg";
+import { ReactComponent as RightArrow } from "../../../assets/icons/rightArrow.svg";
+import { ReactComponent as SqFt } from "../../../assets/icons/rulers.svg";
+import { ReactComponent as Garage } from "../../../assets/icons/cars.svg";
+import { ReactComponent as Baths } from "../../../assets/icons/baths.svg";
+import { ReactComponent as Beds } from "../../../assets/icons/beds.svg";
 
 const Wrapper = styled.div`
   -webkit-user-select: none;
@@ -42,51 +42,51 @@ Icon.Baths = styled(Baths)``;
 Icon.Beds = styled(Beds)``;
 
 Icon.Left = styled(LeftArrow)`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 50%;
-	left: 0px;
-	transform: translate(100%, -50%);
-	width: 45px;
-	height: 45px;
-	padding: 12px;
-	background: white;
-	opacity: 0.3;
-	border-radius: 50%;
-	z-index: 999;
-	cursor: pointer;
-	:hover {
-		opacity: 0.5;
-	}
-	& path {
-		fill: #0d263b;
-	}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(100%, -50%);
+  width: 45px;
+  height: 45px;
+  padding: 12px;
+  background: white;
+  opacity: 0.3;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: pointer;
+  :hover {
+    opacity: 0.5;
+  }
+  & path {
+    fill: #0d263b;
+  }
 `;
 Icon.Right = styled(RightArrow)`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translate(-100%, -40%);
-	width: 45px;
-	height: 45px;
-	padding: 12px;
-	background: white;
-	padding: 12px;
-	opacity: 0.3;
-	border-radius: 50%;
-	z-index: 999;
-	cursor: pointer;
-	:hover {
-		opacity: 0.5;
-	}
-	& path {
-		fill: #0d263b;
-	}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-100%, -40%);
+  width: 45px;
+  height: 45px;
+  padding: 12px;
+  background: white;
+  padding: 12px;
+  opacity: 0.3;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: pointer;
+  :hover {
+    opacity: 0.5;
+  }
+  & path {
+    fill: #0d263b;
+  }
 `;
 
 const Position = styled.div`
@@ -122,7 +122,6 @@ const Position = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
-    margin-top: 5px;
     -webkit-user-select: none;
   }
   .title-small {
@@ -156,14 +155,4 @@ const Detailes = styled.div`
   }
 `;
 
-
-
-export {
-  Wrapper,
-  Container,
-  Img,
-  Position,
-  Info,
-  Detailes,
-  Icon,
-};
+export { Wrapper, Container, Img, Position, Info, Detailes, Icon };
