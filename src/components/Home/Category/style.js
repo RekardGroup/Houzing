@@ -5,6 +5,7 @@ import { ReactComponent as RightArrow } from "../../../assets/icons/rightArrow.s
 const Container = styled.div`
   width: 100%;
   height: 692px;
+  
   h1 {
     margin-top: 96px;
   }
@@ -12,7 +13,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   margin-top: 32px;
   display: flex;
-  padding: 0 250px;
+  padding: 0 150px;
   position: relative;
   justify-content: center;
   .alice-carousel {
@@ -57,7 +58,7 @@ Icon.Right = styled(RightArrow)`
   justify-content: center;
   position: absolute;
   top: 45%;
-  right: 115px;
+  right: 90px;
   transform: translate(-0%, -50%);
   width: 45px;
   height: 45px;

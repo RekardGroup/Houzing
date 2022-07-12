@@ -7,7 +7,7 @@ import { ReactComponent as like } from "../../assets/icons/like.svg";
 import { ReactComponent as resize } from "../../assets/icons/resize.svg";
 
 const Container = styled.div`
-  width: 380px; //aslida 380
+  width: 370px; //aslida 380
   height: 430px;
   position: relative;
   background: #ffffff;
